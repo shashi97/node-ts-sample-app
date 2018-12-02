@@ -1,0 +1,26 @@
+{
+  "name": "firewall-compliance",
+  "version": "1.0.0",
+  "description": "ecarp microservice",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./index.ts",
+    "start": "nodemon ./dist/index.js",
+    "prod": "npm run build && npm run start"
+  },
+  "author": "THD",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.3.0",
+    "nodemon": "^1.18.4",
+    "pino": "^5.6.2"
+  },
+  "devDependencies": {
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.1"
+  }
+}
